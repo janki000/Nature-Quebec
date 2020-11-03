@@ -34,9 +34,22 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
  }
  
  ul{
+   display: none;
   display: flex;
   justify-content:space-around;
   color: gray;
   font-size: 28px;
-  background-color: gray;
+  text-decoration: none;
+ }
+ .st{
+   position: absolute;
+   width: 100%;
+   height: 50%;
+   text-align: center;
+   display: flex;
+   color:white;
+   background-color: green;
+   border-radius: 15px;
+   text-decoration: none;
+   
  }

@@ -20,11 +20,16 @@ if ( have_posts() ) :
 		
 		<?php the_content(); 
 		/* Affiche le contenu principal de l'article */ ?>
+		
 
 		<?php get_template_part( 'partials/metas' ); 
 		// Appel le fichier metas.php dans le dossier partials ?>
 	</article>
 <?php endwhile; // Fermeture de la boucle ?>
+<?php the_field('url')?>
+<div class="st">
+<?php the_field('texte')?>
+</div>
 		
 <?php
 	/* comments_open() valide si nous authorisons les commentaires 
