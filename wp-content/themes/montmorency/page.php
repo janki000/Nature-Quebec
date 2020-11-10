@@ -12,7 +12,7 @@ if ( have_posts() ) :
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
+	<article class=equipeArticle>
 		<h2>
 			<?php the_title(); 
 			/* Titre de la page */ ?>

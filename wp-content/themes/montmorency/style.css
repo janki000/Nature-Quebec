@@ -13,20 +13,26 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
  \___)(____/(____/
  
  */
- .contenu{
+body{
+  background-color: purple;
+}
+ .equipe-article{
+   width: 100%;
+   height: 100%;
    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
  }
- .colonneGauche{
-   width: 70%;
- }
- .colonneDroite{
-   width: 30%;
-   opacity: 0.5;
-   padding: 10px;
- }
- img{
-   width: 90%;
- }
- .actif{
-   opacity: 1;
- }
+.bloc-equipe{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: blue;
+}
+.bloc-employe{
+  width: 33%;
+}

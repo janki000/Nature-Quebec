@@ -13,13 +13,23 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
  \___)(____/(____/
  
  */
- .contenu{
-   display: flex;
-   flex-wrap: nowrap;
- }
- .colonneGauche{
-   width: 80%;
- }
- .colonneDroite{
-   width: 20%;
- }
+ .equipe-article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.bloc-equipe{
+ position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ width: 50%;
+ background-color: blue;
+}
+.bloc-employe{
+ width: 33%;
+}
