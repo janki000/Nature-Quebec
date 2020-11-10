@@ -15,18 +15,11 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
  */
  .contenu{
    display: flex;
+   flex-wrap: nowrap;
  }
  .colonneGauche{
-   width: 70%;
+   width: 80%;
  }
  .colonneDroite{
-   width: 30%;
-   opacity: 0.5;
-   padding: 10px;
- }
- img{
-   width: 90%;
- }
- .actif{
-   opacity: 1;
+   width: 20%;
  }

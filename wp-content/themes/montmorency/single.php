@@ -17,29 +17,44 @@ if ( have_posts() ) :
 			<?php the_title(); 
 			/* Titre de l'article */ ?>
 		</h2>
-		
-		<?php the_content(); 
-		/* Affiche le contenu principal de l'article */ ?>
-		
+		<div class="contenu">
+			<div class="colonneGauche">
+				<?php the_content(); 
+				/* Affiche le contenu principal de l'article */ ?>
+			</div>
+			
+			<div class="colonneDroite <?php if(get_field('actif')){ ?> actif <?php };?>" style="background-color : <?php the_field('couleur_de_fond');?>">
+				
+			
+				<?php if( get_field('autre_nom') ){?>
+					<p><strong>Autre nom</strong>
+					<?php the_field('autre_nom');?><br></p>
+					<?php } ?> 
+
+				<p><strong>Pays d'origine</strong>
+				<?php the_field('pays_dorigine');?><br></p>
+
+				<p><strong>Actif depuis</strong>
+				<?php the_field('annees_actives');?><br></p>
+
+				<p><strong>Labels</strong>
+				<?php the_field('labels');?><br></p>
+
+				<p><strong>Site officiel</strong>
+				<?php the_field('site_officiel');?><br></p>
+
+				<p><img src="<?php the_field('logo');?>" alt=""><br></p>
+
+				<?php the_field('actif');?><br>
+			</div>
+		</div>
+
 
 		<?php get_template_part( 'partials/metas' ); 
 		// Appel le fichier metas.php dans le dossier partials ?>
 	</article>
 <?php endwhile; // Fermeture de la boucle ?>
-<?php the_field('url')?>
-<div class="st">
-<?php the_field('texte')?>
-</div>
-		
-<?php
-	/* comments_open() valide si nous authorisons les commentaires 
-		 '0' != get_comments_number() valide si il y a au moins un commentaire
-		 Si l'une des précédentes conditions est vraie, nous affichons le template de commentaires par défaut de Wordpress
-	*/ 
-	if ( comments_open() || '0' != get_comments_number() ) {
-		comments_template( '', true );
-	}
-?>
+
 
 <?php else : // Si aucun article correspondant n'a été trouvé ?>
 	<h2>Oh oh, aucun article n'a été trouvé</h2>
