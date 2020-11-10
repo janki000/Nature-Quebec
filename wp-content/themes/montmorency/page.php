@@ -11,20 +11,36 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
 	while ( have_posts() ) : the_post(); 
 ?>
-<div class="bloc">
+
 	<article>
-	<div class="title">
 		<h2>
 			<?php the_title(); 
 			/* Titre de la page */ ?>
 		</h2>
-		</div>
-		<div class="cont">
+
 		<?php the_content(); 
 		/* Affiche le contenu principal de la page */ ?>
-		</div>
 	</article>
-</div>
+	<div class="bloc">
+	<div class="soustitle">
+	<?php the_field('sous-title')?> </br></br>
+	</div>
+	<div class="texte">
+	<?php the_field('texte')?>
+	</div> 
+	</div>
+	
+	<div class="grille">
+	<?php the_field('partenaire1')?><img src="<?php the_field('image'); ?>" alt=""></br></br></br></br>
+	<?php the_field('partenaire2')?><img src="<?php the_field('image2'); ?>" alt=""></br></br></br></br>
+	<?php the_field('partenaire3')?><img src="<?php the_field('image3'); ?>" alt=""></br></br></br></br>
+	<?php the_field('partenaire4')?><img src="<?php the_field('image4'); ?>" alt=""></br></br></br></br>
+	
+	</div>
+	
+	
+
+
 <?php endwhile; // Fermeture de la boucle ?>
 
 <?php else : // Si aucune page correspondante n'a été trouvée ?>
