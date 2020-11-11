@@ -29,12 +29,13 @@ if ( have_posts() ) :
             $employes = new WP_Query('post_type=Employes');
             while ($employes->have_posts()) : $employes->the_post(); ?>
             <div class="bloc-employe">      
-                <h3><?php the_title(); ?></h3>
-                <?php the_field('nom'); ?><br/>
-                <?php the_field('role'); ?><br/>
-                <?php the_field('adresse_mail'); ?><br/>
-                <?php the_field('numero_telephone'); ?><br/>
-                <img src="<?php the_field('photo'); ?>" class="equipe-photo"><br/>
+				<div class="texte-employe">
+					<div class="nom-employe"><?php the_title(); ?></div>
+					<?php the_field('role'); ?><br/>
+					<?php the_field('adresse_mail'); ?><br/>
+					<?php the_field('numero_telephone'); ?><br/>
+				</div>
+				<img src="<?php the_field('photo'); ?>" class="employe-photo"><br/>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
