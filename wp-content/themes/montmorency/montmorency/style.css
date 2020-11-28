@@ -1,0 +1,217 @@
+body{
+  background-color: #E9E9E9;
+  color: white;
+  font-family: "Nirmala UI", arial, sans-serif;
+}
+ .equipe-article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+.bloc-equipe{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.titre-page-equipe{
+  display: none;
+}
+.paragraphe-equipe{
+  background-color: #007F3D;
+  border-radius: 14px;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 1vw;
+}
+.nature-quebec-titre-equipe{
+  font-size: 2vw;
+  font-weight: 200;
+}
+
+
+/*CSS pour la version mobile*/
+@media screen and (max-width: 768px){
+  .bloc-employe{
+    width: 96%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 90%;
+    border-radius: 14px;
+    margin-bottom: 5%;
+  }
+  .nom-employe{
+    font-size: 4vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+    margin-bottom: 5%;
+  }
+  .texte-employe{
+    width: 100%;
+    border-radius: 14px;
+    padding-bottom: 5%;
+    height: 100%;
+    font-size: 3vw;
+  }
+  .paragraphe-equipe{
+    font-size: 3vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 5vw;
+    font-weight: 200;
+  }
+}
+
+/*CSS pour la version tablette*/
+@media screen and (min-width: 768px){
+  .bloc-employe{
+    width: 48%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 30%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.7vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+  }
+  .texte-employe{
+    width: 70%;
+    border-radius: 14px;
+    padding-top: 1%;
+    height: 100%;
+    font-size: 1.3vw;
+  }
+  .paragraphe-equipe{
+    font-size: 1.5vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 3vw;
+    font-weight: 200;
+  }
+}
+
+/*CSS pour la version ordinateur*/
+@media screen and (min-width: 1200px){
+  .bloc-employe{
+    width: 32%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 30%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.3vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+  }
+  .texte-employe{
+    width: 70%;
+    border-radius: 14px;
+    padding-top: 0.5%;
+    height: 100%;
+    font-size: 0.9vw;
+  }
+  .paragraphe-equipe{
+    font-size: 1vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2vw;
+  }
+  
+}
+
+/*CSS pour la version gros ordinateur*/
+@media screen and (min-width: 1920px){
+  .bloc-employe{
+    width: 24%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 40%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.1vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    background-color: rgb(117, 219, 117);
+    border-radius: 14px;
+    margin-bottom: 5%;
+  }
+  .texte-employe{
+    width: 60%;
+    font-size: 90%;
+    border-radius: 14px;
+    padding-top: 0.5%;
+    height: 70%;
+    font-size: 0.7vw;
+  }
+  .paragraphe-equipe{
+    font-size: 0.8vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2vw;
+  }
+ 
+}
