@@ -1,0 +1,204 @@
+/*
+Theme Name: Montmorency
+Author: Simon Arnold
+Author URI: https://smnarnold.com
+Description: Thème de base pour apprendre à faire un site Wordpress.
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+ 
+ */
+body{
+  background-color: #E9E9E9;
+  color: white;
+  font-family: "Nirmala UI", arial, sans-serif;
+}
+ .equipe-article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+.bloc-equipe{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*CSS pour la version mobile*/
+@media screen and (max-width: 375px){
+  .bloc-employe{
+    width: 100%;
+    background-color: #007F3D;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1%;
+    border-radius: 14px;
+  }
+  .employe-photo{
+    width: 60%;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+  .nom-employe{
+    font-size: large;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+  }
+  .texte-employe{
+    width: 90%;
+    background-color: rgb(117, 219, 117);
+    border-radius: 14px;
+    padding-bottom: 1%;
+    margin-left: 1%;
+    font-size: smaller;
+  }
+  .titre-page-equipe{
+    display: none;
+  }
+  .paragraphe-equipe{
+    background-color: #007F3D;
+    border-radius: 14px;
+    padding: 2%;
+    text-align: center;
+    font-size: 90%;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+}
+
+/*CSS pour la version tablette*/
+@media screen and (min-width: 768px){
+  body{
+    background-color: pink;
+  }
+}
+
+/*CSS pour la version ordinateur*/
+@media screen and (min-width: 1200px){
+  .bloc-employe{
+    width: 30%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 1%;
+  }
+  .employe-photo{
+    width: 40%;
+    object-fit: none;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: x-large;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+  }
+  .texte-employe{
+    width: 50%;
+    font-size: 90%;
+    background-color: rgb(117, 219, 117);
+    border-radius: 14px;
+    padding-bottom: 2%;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .titre-page-equipe{
+    display: none;
+  }
+  .paragraphe-equipe{
+    background-color: #007F3D;
+    border-radius: 14px;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 120%;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2em;
+    font-weight: 200;
+  }
+ 
+}
+/*CSS pour la version ordinateur 1920
+@media screen and (min-width: 1920px){
+  body{
+    background-color: lightblue;
+  }
+  .bloc-employe{
+    width: 30%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 50%;
+    object-fit: none;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: x-large;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+  }
+  .texte-employe{
+    width: 60%;
+    background-color: rgb(117, 219, 117);
+    border-radius: 14px;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    height: 100%;
+  }
+  .titre-page-equipe{
+    display: none;
+  }
+  .paragraphe-equipe{
+    background-color: #007F3D;
+    border-radius: 14px;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 120%;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2em;
+    font-weight: 200;
+  }
+}
+*/
+
+
