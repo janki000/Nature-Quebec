@@ -1,0 +1,1352 @@
+/*
+Theme Name: Montmorency
+Author: Simon Arnold
+Author URI: https://smnarnold.com
+Description: Thème de base pour apprendre à faire un site Wordpress.
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+ 
+ */
+
+ .error{
+   background-color: #007F3D;
+   border-radius: 14px;
+   color: white;
+  overflow: hidden;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+		  font-size: medium;
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  -webkit-animation: noise-3 1s linear infinite;
+          animation: noise-3 1s linear infinite;
+  overflow: default;
+}
+
+.error:after {
+  content: 'error 404';
+  font-family: OCR-A;
+  font-size: 100px;
+  
+  text-align: center;
+  width: 550px;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 35%;
+  opacity: 0;
+  color: white;
+  -webkit-animation: noise-1 .2s linear infinite;
+          animation: noise-1 .2s linear infinite;
+}
+.error:before {
+  content: 'error 404';
+  font-family: OCR-A;
+  font-size: 100px;
+  
+  text-align: center;
+  width: 550px;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 35%;
+  opacity: 0;
+  color: white;
+  -webkit-animation: noise-2 .2s linear infinite;
+          animation: noise-2 .2s linear infinite;
+}
+
+.info {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 280px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  -webkit-animation: noise-3 1s linear infinite;
+          animation: noise-3 1s linear infinite;
+}
+
+.info:before {
+  content: 'file not found';
+  font-family: OCR-A;
+  font-size: 100px;
+  text-align: center;
+  width: 800px; 
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 40px;
+  right: 100px;
+  opacity: 0;
+  color: white;
+  -webkit-animation: noise-2 .2s linear infinite;
+          animation: noise-2 .2s linear infinite;
+}
+
+.info:after {
+  content: 'file not found';
+  font-family: OCR-A;
+  font-size: 100px;
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  opacity: 0;
+  color: white;
+  -webkit-animation: noise-1 .2s linear infinite;
+          animation: noise-1 .2s linear infinite;
+}
+
+@-webkit-keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@-webkit-keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@-webkit-keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}  
+  4.3% {opacity: 1; -webkit-transform: scaleY(1.7); transform: scaleY(1.7);}
+  43% {opacity: 1; -webkit-transform: scaleX(1.5); transform: scaleX(1.5);}
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}  
+  4.3% {opacity: 1; -webkit-transform: scaleY(1.7); transform: scaleY(1.7);}
+  43% {opacity: 1; -webkit-transform: scaleX(1.5); transform: scaleX(1.5);}
+}
+
+@-webkit-keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}
+  4.3% {opacity: 1; -webkit-transform: scaleY(4); transform: scaleY(4);}
+  43% {opacity: 1; -webkit-transform: scaleX(10) rotate(60deg); transform: scaleX(10) rotate(60deg);}
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}
+  4.3% {opacity: 1; -webkit-transform: scaleY(4); transform: scaleY(4);}
+  43% {opacity: 1; -webkit-transform: scaleX(10) rotate(60deg); transform: scaleX(10) rotate(60deg);}
+}
+
+.wrap {
+  top: 30%;
+  left: 25%;
+  
+  height: 200px;
+  
+  margin-top: -100px;
+  position: absolute;
+}
+code {
+  color: white;
+}
+span.blue {
+  color: #48beef;
+}
+span.comment {
+  color: #7f8c8d;
+}
+span.orange {
+  color: #f39c12;
+}
+span.green {
+  color: #33cc33;
+}
+
+.viewFull {
+  font-family:OCR-A;
+  color:orange;
+  text-decoration:none;
+}
+
+ /* CSS PAGE HISTOIRE ET ANIMATION [JCD]------------------------------------------------------------------------------------------------------------ */
+
+ body, html{
+  background-color: #E9E9E9;
+  font-size: 24px;
+
+}
+.abeille{
+  position: fixed;
+  width: 5%;
+  z-index: 2;
+  right: 5%;
+}
+
+.page{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+ 
+}
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  background-color: #007F3D;
+  border-radius: 14px;
+  width: 100%;
+  padding: 1.5%;
+  margin: 1%;
+}
+.bloc1{
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 1.5%;
+}
+.bloc2{
+  background-color: #007F3D;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: white;
+  padding: 1.5%
+}
+.bloc3{
+  background-color: #007F3D;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+  margin: 1%;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 1.5%;
+  
+}
+.bloc{
+  background-color: #007F3D;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+  margin: 1%;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 1.5%;
+}
+
+.boiteImage{
+  width: 50%;
+  height: 60%;
+  justify-content: right;
+  border-radius: 14px;
+  object-fit: cover;
+  background-color: white;
+  opacity: 1;
+}
+
+
+.article{
+  background-color: rgb(117, 219, 117);;
+  width: 95%;
+  height: 80%;
+  position: relative;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  
+}
+.article1{
+  background-color: rgb(117, 219, 117);;
+  width: 95%;
+  height: 80%;
+  position: relative;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  padding: 18px;
+}
+
+.titreArticle{
+  width: 75%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 1.7vw;
+  z-index: 2;
+}
+
+.dateArticle{
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 3.5vw;
+  top: 0%;
+}
+.infos{
+  position: absolute;
+  text-align: center;
+  padding: 30px;
+  bottom: 15%;
+  font-size: 1.5vw;
+}
+@supports (backdrop-filter: blur(8px)){
+  .article{
+    backdrop-filter: blur(8px); 
+  }
+}
+
+
+
+
+
+
+/* CSS ANIMATION JAN CARLOS-------------------------------------------------------------------------------------------*/
+.image-arbre{
+position: absolute;
+width: 100%;
+}
+
+.tronc {
+  width:30%;
+  position: fixed;
+  left:0;
+  top:50%;
+  z-index:1;
+}
+
+.oiseau {
+  width:50%;
+  position: fixed;
+  left:0;
+  top:30%;
+  z-index:1;
+  
+}
+.nature{
+  display: flex;
+  position: fixed;
+  font-size: 50px;
+  left: 27%;
+  top: 73%;
+}
+.quebec{
+  display: flex;
+  position: fixed;
+  font-size: 50px;
+  left: 27%;
+  top: 80%;
+}
+
+/*CSS PAGE PARTENAIRES-----------------------*/
+
+.has-large-font-size{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+p {
+  font-size:20px;
+}
+.bloc{
+  position: relative;
+  justify-content: center;
+  background-color: rgb(12, 107, 20);
+  border-radius: 14px;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.partenaires{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.gallery {
+  width: 399px;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.image-partenaire{
+  background-color: rgb(8, 109, 53);
+  width: 399px;
+  height: 250px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.gallery:hover {
+  border: 1px solid rgb(13, 107, 34);
+  width: 420px;
+}
+.gallery img {
+  width: 250px;
+  height: auto;
+}
+.desc {
+  padding: 20px;
+  top: 20px;
+  text-align: center;
+  font-size: 10px;
+  background-color: rgb(113, 230, 132);
+  border-radius: 14px;
+}
+.partenaires * {
+  box-sizing: border-box;
+}
+.responsive {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 6px;
+  width: 24.99999%;
+  font-size: 50px;
+  
+}
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .imgEquipe{
+    width: 49,99999%;
+  }
+  .imageHistoire{
+    position: relative;
+    width: 49.99999%;
+    
+  }
+}
+
+/* Mobil Responsive*/
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    font-size: 50px;
+    left: 50%;
+  }
+  .imgEquipe{
+    width: 100%;
+    bottom: 60px;
+    left: 0px;
+  }
+  .imageHistoire{
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+ 
+  clear: none;
+}
+
+/* CSS ANIMATION DAID----------------------------------------------------------------------------------------------------------------*/
+.all {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+}
+
+
+.handshake1 {
+  width: 10%;
+  position: relative;
+  left: 400px;
+  opacity: 0;
+  transform: rotate(-35deg);
+}
+
+.hand1 {
+  z-index: 2;
+  position: fixed;
+}
+
+.finger1 {
+  z-index: 1;
+  position: fixed;
+}
+
+.palm1 {
+  z-index: 4;
+  position: fixed;
+}
+
+.handshake2 {
+  position: fixed;
+  transform: rotate(40deg);
+  left: -190px;
+  opacity: 0;
+}
+
+.hand2 {
+  z-index: 3;
+  position: fixed;
+}
+
+.finger2 {
+  z-index: 1;
+  position: fixed;
+}
+
+.nuage {
+  position: fixed;
+}
+svg {
+  position: fixed;
+  top: 800px;
+  display: block;
+  fill: transparent;
+  stroke-width: 2px;
+  width: 20px;
+}
+/* CSS page Histoire---------------------------------------------------------------------------------------------------------------------------- 
+
+
+.blocP{
+  position: relative;
+  background-color: rgb(12, 107, 20);
+  border-radius: 14px;
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  top: 650px;
+  color: white;
+  text-align: justify;
+}
+
+.imageHistoire{
+  display: flex;
+  position: relative;
+  width: 100%;
+  bottom: 350px;
+  height: 200px;
+}
+
+.imgEquipe{
+  display: flex;
+  position: relative;
+  width: 450px;
+  height: auto;
+  bottom: 60px;
+  left: 900px;
+  border-radius: 14px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////
+.sectionHistoire{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  top: 450px;
+}
+.gall{
+  width: 399px;
+  height: auto;
+  border-radius: 14px;
+  
+}
+.imgCaribou{
+  width: 550px;
+  height: 650px;
+  border-radius: 14px;
+}
+.gall img {
+  width: 100%;
+  height: 550;
+}
+
+.bHistoire{
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  bottom: 60px;
+  color: white;
+  border-radius: 14px;
+  z-index: 4;
+}
+.baniere{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 145px;
+  border-radius: 14px 14px 0 0;
+  background-color: rgb(8, 109, 53);
+  opacity: 0.5;
+}
+.bTxtHistoire{
+  position: relative;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(8, 109, 53);
+  border-radius: 14px;
+  bottom: 100px;
+}
+
+.sectionHistoire * {
+  box-sizing: border-box;
+  width: 100%;
+}
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(117, 219, 117);
+  border-radius: 14px;
+  color: white;
+}
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
+  
+
+
+/* CSS PAGE ÉQUIPE------------------------------------------------------------------------------------------------------------------*/
+
+html{
+  height: 100%;
+}
+body{
+  background-color: #E9E9E9;
+  color: white;
+  font-family: "Nirmala UI", arial, sans-serif;
+  height: 100%;
+  font-weight: 100;
+}
+/*---------------HEADER---------------------*/
+.logo-accueil img{
+  width: 20%;
+}
+header li{
+  font-size: 200%;
+  width: 100%;
+}
+header ul{
+  list-style-type: none;
+  color: #707070;
+}
+#menu-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#menu-menu a{
+  color: #707070;
+  font-size: 1.5vw;
+  margin: 3%;
+}
+/*---------------FOOTER---------------------*/
+
+/*---------------PAGE D'ACCUEIL-------------*/
+
+/*--------------PAGE DE CONTACT-------------*/
+.titre-page-contact{
+  display: none;
+}
+.article-contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Bloc du haut*/
+.bloc-contact{
+  border-radius: 14px;
+  display: flex;
+  width: 96%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.nous-contacter{
+  width: 100%;
+  background-color: rgb(117, 219, 117);
+  font-size: 30px;
+  border-radius: 14px 14px 0 0;
+  font-weight: 200;
+  padding: 2%;
+}
+.text-contact{
+  width: 100%;
+  background-color: #007F3D;
+  border-radius: 0px 0px 14px 14px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.image-fond{
+  width: 60%;
+  background-image: url(https://images.unsplash.com/photo-1557457994-2bc4176b5a2f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);
+  background-size: cover;
+  padding: 5%;
+  margin: 2%;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+}
+.blanc-haut-contact{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+  border-radius: 14px;
+}
+/*Bloc du bas*/
+.formulaire-contact{
+  border-radius: 14px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  margin: 0 20%;
+}
+.formulaire{
+  background-color: #007F3D;
+  width: 100%;
+  border-radius: 0px 0px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+}
+.formulaire p{
+  text-align: center;
+  width: 100%;
+}
+.ecrivez-nous{
+  background-color: rgb(117, 219, 117);
+  width: 100%;
+  border-radius: 14px 14px 0px 0px;
+  font-size: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpcf7-response-output{
+  width: 50%;
+  margin:0;
+}
+.formulaire input{
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(117, 219, 117);
+  padding: 2%;
+  color: white;
+  font-size: larger;
+}
+.formulaire select{
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(117, 219, 117);
+  color: white;
+  padding: 2%;
+  font-size: larger;
+}
+.formulaire textarea{
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(117, 219, 117);
+  padding: 2%;
+}
+.formulaire label{
+  font-size: larger;
+}
+.formulaire button{
+  padding: 2%;
+}
+/*Maps*/
+.maps{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #007F3D;
+  border-radius: 14px;
+  width: 100%;
+}
+.nous-trouver{
+  width: 100%;
+  text-align: center;
+  font-size: 250%;
+  padding: 2%;
+  background-color: rgb(117, 219, 117);
+  border-radius: 14px 14px 0px 0px;
+}
+.map-montreal, .trois-riviere{
+  width:100%;
+  text-align: center;
+  font-size: 150%;
+  display:flex;
+  flex-direction: row-reverse;
+  color: black;
+}
+.map-montreal{
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+.localisation{
+  width: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1587969720914-d8c3f0646968?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80);
+  background-size: cover;
+  margin: 2%;
+  border-radius: 14px;
+}
+.troisri{
+  background-image: url(https://images.unsplash.com/photo-1568728066827-45a77de2fc03?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80);
+}
+.bureau{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  font-size: larger;
+}
+.adresse{
+  width: 100%;
+  text-align: center;
+}
+
+iframe{
+  width: 50%;
+  margin: 2%;
+}
+.fond-blanc-contact{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 14px;
+}
+
+
+/*--------------PAGE DE L'ÉQUIPE------------*/
+ .equipe-article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
+.bloc-equipe{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.titre-page-equipe{
+  display: none;
+}
+.paragraphe-equipe{
+  background-color: #007F3D;
+  border-radius: 14px;
+  padding: 3%;
+  text-align: center;
+  font-size: 1vw;
+}
+.nature-quebec-titre-equipe{
+  font-size: 30px;
+  font-weight: 200;
+}
+.description-employe{
+  display: none;
+}
+.bloc-employe{
+  overflow: hidden;
+}
+.bloc-employe:hover img{
+  transform: scale(1.05);
+}
+.texte-employe a{
+  text-decoration: none;
+  color: white;
+}
+.popup{
+  background-image:url(https://images.unsplash.com/photo-1542059534-3f965062a195?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1001&q=80);
+  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  font-size: 1.2vw;
+  padding: 30% 10%;
+  top: 0;
+  border-radius: 14px;
+  z-index: 3;
+}
+.popup-description{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10% 0%;
+  color: black;
+  border-radius: 14px;
+}
+.fermer-popup{
+  position:absolute;
+  right: 0;
+  top:0;
+  font-size: 1.7vw;
+  border: none;
+}
+.text-equipe{
+  background-image: url(https://images.unsplash.com/photo-1513116643862-da9743f7abf3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  padding: 2%;
+  color: black;
+  border-radius: 14px;
+}
+.fond-blanc-equipe{
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 10% 5%;
+  padding: 2%;
+  border-radius: 14px;
+}
+
+/*CSS pour la version mobile*/
+@media screen and (max-width: 768px){
+  /*-----------PAGE ÉQUIPE------------*/
+  .bloc-employe{
+    width: 96%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 90%;
+    border-radius: 14px;
+    margin-bottom: 5%;
+  }
+  .nom-employe{
+    font-size: 4vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+    margin-bottom: 5%;
+  }
+  .texte-employe{
+    width: 100%;
+    border-radius: 14px;
+    padding-bottom: 5%;
+    height: 100%;
+    font-size: 3vw;
+  }
+  .paragraphe-equipe{
+    font-size: 3vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 5vw;
+    font-weight: 200;
+  }
+  .popup{
+    width: 70%;
+  }
+  .popup-description{
+    font-size: 3vw;
+  }
+  .fermer-popup{
+    font-size: 3vw;
+  }
+  /*---------------PAGE CONTACT----------------*/
+  .bloc-contact{
+    width: 90%;
+
+  }
+  .nous-contacter{
+    font-size: 150%;
+  }
+  .text-contact{
+    font-size: 50%;
+  }
+  .ecrivez-nous{
+    width: 100%;
+    margin: 0;
+    border-radius: 14px 14px 0px 0px;
+    padding: 2% 0%;
+    font-size: 150%;
+  }
+  .image-fond{
+    width: 80%;
+  }
+  .blanc-haut-contact{
+    font-size: 200%;
+    width: 80%;
+  }
+  .formulaire-contact{
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 5%;
+  }
+  .formulaire{
+    width: 100%;
+    padding: 2% 6%;
+    border-radius: 0px 0px 14px 14px;
+  }
+  .formulaire input{
+    padding: 1%;
+    width: 100%;
+    font-size: medium;
+  }
+  .formulaire textarea{
+    padding: 1%;
+    
+    width: 100%;
+  }
+  .wpcf7{
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  .formulaire label{
+    font-size: medium;
+  }
+  .formulaire select{
+    font-size: medium;
+    width: 100%;
+    padding: 2%;
+  }
+  .maps{
+    margin: 5%;
+  }
+  .map-montreal, .trois-riviere{
+    align-items: center;
+    flex-direction: column;
+    font-size: smaller;
+  }
+  .localisation{
+    width:100%;
+  }
+  iframe{
+    width:80%;
+  }
+  .nous-trouver{
+    font-size: 150%;
+  }
+}
+
+/*CSS pour la version tablette*/
+@media screen and (min-width: 768px){
+  .bloc-employe{
+    width: 48%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 30%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.7vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+  }
+  .fond-blanc-equipe{
+    font-size: larger;
+  }
+  .texte-employe{
+    width: 70%;
+    border-radius: 14px;
+    padding-top: 1%;
+    height: 100%;
+    font-size: 1.3vw;
+  }
+  .paragraphe-equipe{
+    font-size: 1.5vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 3vw;
+    font-weight: 200;
+  }
+  .maps{
+    width: 80%;
+    margin-top: 5%;
+  }
+  .formulaire input{
+    width: 50%;
+  }
+
+
+}
+
+/*CSS pour la version ordinateur*/
+@media screen and (min-width: 1200px){
+  .bloc-employe{
+    width: 32%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 30%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.3vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 14px;
+    background-color: rgb(117, 219, 117);
+  }
+  .texte-employe{
+    width: 70%;
+    border-radius: 14px;
+    padding-top: 0.5%;
+    height: 100%;
+    font-size: 0.9vw;
+  }
+  .paragraphe-equipe{
+    font-size: 1vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2vw;
+  }
+  .popup{
+    width: 50%;
+  }
+  .popup-description{
+    font-size: 1.2vw;
+  }
+  /*---------------PAGE CONTACT----------------*/
+  .nous-contacter{
+    font-size: 36px;
+  }
+  .bloc-contact{
+    font-size: 1.5vw;
+  }
+  .ecrivez-nous{
+    width: 100%;
+    margin: 0;
+    border-radius: 14px 14px 0px 0px;
+    padding: 2% 0%;
+    font-size: 2.5vw;
+  }
+  .formulaire-contact{
+    flex-direction: column-reverse;
+    width: 60%;
+    margin: 5%;
+  }
+  .formulaire{
+    width: 100%;
+    padding: 2% 6%;
+    border-radius: 0px 0px 14px 14px;
+    font-size: larger;
+  }
+  .formulaire input{
+    padding: 1%;
+    width: 60%;
+  }
+  .formulaire select{
+    padding: 1%;
+    width: 50%;
+    font-size: smaller;
+  }
+  .formulaire textarea{
+    padding: 1%;
+    width: 50%;
+  }
+  .wpcf7{
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  
+}
+
+/*CSS pour la version gros ordinateur*/
+@media screen and (min-width: 1920px){
+  .bloc-employe{
+    width: 24%;
+    height: 50%;
+    background-color: #007F3D;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5%;
+  }
+  .employe-photo{
+    width: 40%;
+    border-radius: 14px;
+  }
+  .nom-employe{
+    font-size: 1.1vw;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    background-color: rgb(117, 219, 117);
+    border-radius: 14px;
+    margin-bottom: 5%;
+  }
+  .texte-employe{
+    width: 60%;
+    font-size: 90%;
+    border-radius: 14px;
+    padding-top: 0.5%;
+    height: 70%;
+    font-size: 0.7vw;
+  }
+  .paragraphe-equipe{
+    font-size: 0.8vw;
+  }
+  .nature-quebec-titre-equipe{
+    font-size: 2vw;
+  }
+  .popup{
+    width: 50%;
+    font-size: 1.2vw;
+  }
+  .popup-description{
+    font-size: 1vw;
+  }
+  /*------PAGE CONTACT-------*/
+  .nous-contacter{
+    font-size: 48px;
+  }
+  .ecrivez-nous{
+    font-size: 250%;
+  }
+  .bloc-contact{
+    font-size: 1vw;
+    margin-bottom: 0;
+  }
+  .formulaire-contact{
+    margin: 5% 25%;
+  }
+}
+
+
+
+
+
+
+
