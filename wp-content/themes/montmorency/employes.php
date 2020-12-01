@@ -11,7 +11,6 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
 	while ( have_posts() ) : the_post(); 
 ?>
-<div class="background-popup"></div>
 	<article>
 		<?php if (!is_front_page()) : 
 			/* Affiche le code suivant uniquement si nous ne sommes PAS sur la page d'accueil */ ?>
@@ -45,9 +44,9 @@ if ( have_posts() ) :
 					<button class="fermer-popup">X</button>
 					<div class="popup-description"></div>
 				</div>
-			</div>
+			</div>	
 	</article>
-	</div>
+	
 <?php endwhile; // Fermeture de la boucle ?>
 
 <?php else : // Si aucune page correspondante n'a été trouvée ?>
