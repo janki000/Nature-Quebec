@@ -15,6 +15,7 @@ if ( have_posts() ) :
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+<?php wp_enqueue_script( 'script-valeur', get_template_directory_uri() . '/valeur.js', array(), '1.0.0', true );?>
 
     <article>
         
@@ -37,39 +38,36 @@ if ( have_posts() ) :
         <?php endwhile; wp_reset_postdata(); ?>
 
 
-        <div class="ensemble-valeur">
-            <div class="menu-valeur">
-                <img src="logo.png" alt="">
-            </div>
-            <div class="valeur-valeur">
-                <span class="bold-valeur"><?php the_field('valeur'); ?></span>
-            </div>
+    <div class="ensemble-valeur">
+        <div class="valeur-valeur">
+            <p><span class="bold-valeur"><?php the_title() ?></span></p>
+            <p><?php the_field('soustitre') ?></p>
         </div>
         <div class="entete-valeur">
-            <img class="img forest-valeur" src="alberto-bobbera-KNhVlMjkNjs-unsplash.jpg" alt="">
+            <img class="img forest-valeur" src="<?php the_field('foret_img')?>" alt="">
             <div class="propos-valeur">
-                <div class="h2"><?php the_field('propos'); ?></div>
-                <?php the_field('proposdesc'); ?>
+                <h2><?php the_field('propos')?></h2>
+                <p><?php the_field('proposdesc')?></p>
             </div>
         </div>
 
         <div class="bloc1-valeur">
             <div class="vert-valeur bubble-valeur">
                 <div class="vision section-valeur">
-                    <img src="vision.png" class="imgvision-valeur" alt="">
+                    <img src="<?php the_field('vision_img')?>" class="imgvision-valeur" alt="">
                     <div class="text2-valeur">
-                        <div class="h2"><?php the_field('vision'); ?></div>
-                        <?php the_field('visiondesc'); ?>
+                        <h2><?php the_field('vision')?></h2>
+                        <p><?php the_field('visiondesc')?></p>
                     </div>
                 </div>
             </div>
             
             <div class="vert-valeur bubble-valeur">
                 <div class="mission section-valeur">
-                    <img src="mission.png" class="imgmission-valeur" alt="">
+                    <img src="<?php the_field('mission_img')?>" class="imgmission-valeur" alt="">
                     <div class="text1-valeur">
-                        <div class="h2"><?php the_field('mission'); ?></div>
-                        <?php the_field('missiondesc'); ?>
+                        <h2><?php the_field('mission')?></h2>
+                        <p><?php the_field('missiondesc')?></p>
                     </div>
                 </div> 
             </div>      
@@ -80,14 +78,14 @@ if ( have_posts() ) :
                 <img src="" alt="">
                 <p id="nombre">0</p>
                 <div class="int-valeur">
-                    <?php the_field('membres'); ?>
+                    <p><?php the_field('membres')?></p>
                 </div>
             </div>
 
             <div class="cadre-valeur">
                 <img src="" alt="">
                 <p id="nombre2">0</p><div class="int-valeur">
-                    <?php the_field('campagne'); ?>
+                    <p><?php the_field('campagne')?></p>
                 </div>
             </div>
 
@@ -95,7 +93,7 @@ if ( have_posts() ) :
                 <img src="" alt="">
                 <p id="nombre3">0</p>
                 <div class="int-valeur">
-                    <?php the_field('annee'); ?>
+                    <p><?php the_field('annee')?></p>
                 </div>
             </div>
 
@@ -103,7 +101,7 @@ if ( have_posts() ) :
                 <img src="" alt="">
                 <p id="nombre4">0</p>
                 <div class="int-valeur">
-                    <?php the_field('organisme'); ?>
+                    <p><?php the_field('organisme')?></p>
                 </div>
             </div>
         </div>
