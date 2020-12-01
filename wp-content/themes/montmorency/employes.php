@@ -5,7 +5,7 @@
 
 // Appel le fichier header.php
 get_header(); 
-
+wp_enqueue_script( 'equipe', get_template_directory_uri() . '/equipe.js', array(), '1.0.0', true );
 // Est-ce que nous avons des pages à afficher ?
 if ( have_posts() ) : 
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)

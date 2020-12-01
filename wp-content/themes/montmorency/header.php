@@ -44,11 +44,15 @@
 		</div>
 
 	<nav class="menus">
+		<div class="fond-blanc-header">
+
+		
 		<?php 
 			// Affiche un menu si dans le tableau de bord un menu à été défini dans cet emplacement
 			wp_nav_menu( array( 'menu' => 'menu' ) );
 		?>
 		<?php wp_nav_menu( array('menu' => 'menu-secondaire' )); ?>
+	</div>
 	</nav>
 
 	<?php 
