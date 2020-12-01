@@ -35,7 +35,9 @@ add_action('widgets_init', 'basic_sidebars');
 Function ajoutant les styles et scripts */
 function basic_style_and_js()  { 
 	/* ajoute d'une feuille de style */
-	wp_enqueue_style('styleDavid.css', get_stylesheet_directory_uri() . '/styleDavid.css');
+	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/stylePam.css');
+	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/styleJan.css');
+	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/styleDavid.css');
 	/* ajoute d'un fichier javascript */
 	wp_enqueue_script('main.js', get_template_directory_uri() . '/main.js', array(), false, true);
 }
