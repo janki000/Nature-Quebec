@@ -20,6 +20,7 @@
 /* Cette fonction permet à Wordpress et aux plugins d'instancier des fichier css et js dans le <head>
 	 Supprimer cette fonction briserait des plugins et fonctionnalité de Wordpress. 
 	 À la limite vous pouvez la déplacer, mais gardez là. */
+	 
 ?>
 </head>
 
@@ -33,15 +34,21 @@
 >
 
 <header>
-	<h1>
-		<div class="logo-accueil"><a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Affiche le nom du site ?></a></div>
-	</h1>
 
-	<nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+		<div class="logo-accueil"><a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><img src="https://naturequebec.org/wp-content/themes/blank/img/logo.png"></a></div>
+		<div class="menu-btn">
+			<div class="menu-btn-burger"></div>
+		</div>
+
+	<nav class="menus">
 		<?php 
 			// Affiche un menu si dans le tableau de bord un menu à été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+			wp_nav_menu( array( 'menu' => 'menu' ) );
 		?>
+		<?php wp_nav_menu( array('menu' => 'menu-secondaire' )); ?>
 	</nav>
 
 	<?php 

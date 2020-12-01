@@ -15,3 +15,11 @@ blocEmployes.forEach(personne => {
 fermerPopup.addEventListener('click', () => {
     popup.style.display = "none";
 });
+//On va chercher le bloc du hamburger
+const hamburger = document.querySelector('.menu-btn');
+//Aller chercher les menus
+const menus = header.querySelector('.menus');
+//Quand on clic dessus, on fait apparaître le menu
+hamburger.addEventListener('click', () =>{
+    console.log("chat");
+});
