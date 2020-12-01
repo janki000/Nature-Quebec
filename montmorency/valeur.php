@@ -38,49 +38,38 @@ if ( have_posts() ) :
 
 
         <div class="ensemble-valeur">
-        <div class="menu-valeur">
-            <img src="https://i.imgur.com/F7PKBwE.png" alt="">
-        </div>
-        <div class="valeur-valeur">
-            <p><span class="bold-valeur">Valeurs |</span>   Sensibiliser, Mobiliser, Agir</p>
-        </div>
+            <div class="menu-valeur">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="valeur-valeur">
+                <span class="bold-valeur"><?php the_field('valeur'); ?></span>
+            </div>
         </div>
         <div class="entete-valeur">
-            <img class="img forest-valeur" src="https://i.imgur.com/vAcWJen.jpg" alt="">
+            <img class="img forest-valeur" src="alberto-bobbera-KNhVlMjkNjs-unsplash.jpg" alt="">
             <div class="propos-valeur">
-                <h2>À PROPOS DE NATURE QUÉBEC</h2>
-                <p>Nature Québec  oeuvre activement à la conservation des milieux naturels et à l’utilisation durable des ressources sur le territoire québécois.
-
-                    Depuis 1981, Nature Québec privilégie une approche globale connectée aux grands enjeux planétaires liés au climat et à la biodiversité. Localement, Nature Québec mène des campagnes et des projets sur la biodiversité, la forêt, l’énergie et le climat, et ce, d’Anticosti jusqu’au coeur de nos villes.
-                    
-                    Nature Québec bénéficie d’une équipe de professionnels, appuyée par un réseau d’organismes affiliés et de chercheurs-collaborateurs qui lui confèrent une crédibilité reconnue dans ses domaines d’intervention.
-                    
-                    Nature Québec souscrit aux objectifs de la Stratégie mondiale de conservation de l’Union internationale pour la conservation de la nature (UICN), dont il est membre.</p>
-                <img src="" alt="">
+                <div class="h2"><?php the_field('propos'); ?></div>
+                <?php the_field('proposdesc'); ?>
             </div>
         </div>
 
         <div class="bloc1-valeur">
             <div class="vert-valeur bubble-valeur">
                 <div class="vision section-valeur">
-                    <img src="https://i.imgur.com/kSU8769.png" class="imgvision-valeur" alt="">
+                    <img src="vision.png" class="imgvision-valeur" alt="">
                     <div class="text2-valeur">
-                        <h2>Notre vision</h2>
-                        <p>Nature Québec agit en vue d’une société plus juste, à faible empreinte écologique et climatique, solidaire du reste de la planète. L’organisme oriente ses actions pour que le Québec aime ses milieux naturels, en ville comme en région, les protège et les reconnaisse comme essentiels à son épanouissement.</p>
+                        <div class="h2"><?php the_field('vision'); ?></div>
+                        <?php the_field('visiondesc'); ?>
                     </div>
                 </div>
             </div>
             
             <div class="vert-valeur bubble-valeur">
                 <div class="mission section-valeur">
-                    <img src="https://i.imgur.com/0FBTo2W.png" class="imgmission-valeur" alt="">
+                    <img src="mission.png" class="imgmission-valeur" alt="">
                     <div class="text1-valeur">
-                        <h2>Notre mission</h2>
-                        <p>Nature Québec encourage la mobilisation citoyenne, intervient dans le débat public, informe, sensibilise et réalise des projets afin que notre société:
-                        <li>Valorise la biodiversité</li>
-                        <li>Protège les milieux naturels et les espèces</li> 
-                        <li>Favorise le contact avec la nature</li>
-                        <li>Utilise de façon durable les ressources</li></p>
+                        <div class="h2"><?php the_field('mission'); ?></div>
+                        <?php the_field('missiondesc'); ?>
                     </div>
                 </div> 
             </div>      
@@ -90,25 +79,32 @@ if ( have_posts() ) :
             <div class="cadre-valeur">
                 <img src="" alt="">
                 <p id="nombre">0</p>
-                <p class='int-valeur'>Membres et sympathisants</p>
+                <div class="int-valeur">
+                    <?php the_field('membres'); ?>
+                </div>
             </div>
 
             <div class="cadre-valeur">
                 <img src="" alt="">
-                <p id="nombre2">0</p>
-                <p class='int-valeur'>Campagnes sur le terrain et plus!</p>
+                <p id="nombre2">0</p><div class="int-valeur">
+                    <?php the_field('campagne'); ?>
+                </div>
             </div>
 
             <div class="cadre-valeur">
                 <img src="" alt="">
                 <p id="nombre3">0</p>
-                <p class='int-valeur'>Années d’expérience</p>
+                <div class="int-valeur">
+                    <?php the_field('annee'); ?>
+                </div>
             </div>
 
             <div class="cadre-valeur">
                 <img src="" alt="">
                 <p id="nombre4">0</p>
-                <p class='int-valeur'>Organismes affiliés</p>
+                <div class="int-valeur">
+                    <?php the_field('organisme'); ?>
+                </div>
             </div>
         </div>
 
